@@ -7,122 +7,75 @@
 <p align="center">
   <a href="https://docs.opsfolio.com/fleetfolio/eaa/introduction"><img src="https://img.shields.io/badge/Docs-4285F4?style=for-the-badge&logo=googledocs&logoColor=white" alt="Docs"></a>
   <a href="https://fleetfolio.dev/"><img src="https://img.shields.io/badge/Website-06B6D4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"></a>
+  <a href="https://github.com/opsfolio/fleetfolio-packages/releases"><img src="https://img.shields.io/github/v/release/opsfolio/fleetfolio-packages?style=for-the-badge&color=22c55e" alt="Releases"></a>
 </p>
 
-# Fleetfolio: Next-Generation Infrastructure Assurance
+# Fleetfolio Packages
 
-[Fleetfolio](https://fleetfolio.dev/) is a powerful infrastructure assurance platform built on surveilr that helps organizations achieve continuous compliance, security, and operational reliability. Unlike traditional asset management tools that simply list discovered assets, Fleetfolio takes a proactive approach by defining expected infrastructure assets and verifying them against actual assets found using osQuery Management Server (MS).
+Welcome to the distribution repository for
+[Fleetfolio](https://fleetfolio.dev/), a powerful infrastructure assurance
+platform.
 
-Fleetfolio consists of two core components:
+> [!NOTE]
+> The source code for Fleetfolio is hosted in a private repository at
+> [opsfolio/fleetfolio](https://github.com/opsfolio/fleetfolio). This repository
+> serves as the public distribution hub where users can download pre-compiled
+> binaries and official releases.
 
-- **EAA (Enterprise Asset Assurance)**
-- **TEM (Threat Exposure Management)**
+## 📥 Downloads & Installation
 
-Together, EAA and TEM provide a complete visibility-to-remediation lifecycle across infrastructure, applications, and digital assets.
+To get started with Fleetfolio, download the latest stable binary for your
+operating system (Windows, Linux, or macOS) from the
+**[Releases](https://github.com/opsfolio/fleetfolio-packages/releases)** page.
 
+For detailed installation guides, please refer to our documentation:
 
-## What Fleetfolio Does
+- [EAA Installation Guide](https://docs.opsfolio.com/fleetfolio/eaa/installation)
+- [TEM Installation Guide](https://docs.opsfolio.com/fleetfolio/tem/installation)
 
-Fleetfolio ensures that organizations know:
+---
 
-- **What assets should exist** (Expectation)
-- **What assets actually exist** (Discovery)
-- **Where gaps exist** (Compliance & Security Analysis)
+# What is Fleetfolio?
 
-Fleetfolio bridges the gap between declared infrastructure and real-world infrastructure. This ensures that unauthorized assets, shadow IT, untracked systems, and exposure risks are continuously identified and managed.
+Fleetfolio is a next-generation infrastructure assurance platform built on
+**surveilr**. It helps organizations achieve continuous compliance, security,
+and operational reliability by bridging the gap between **declared
+expectations** and **real-world discovery**.
 
+Unlike traditional asset management tools that simply list discovered assets,
+Fleetfolio takes a proactive approach by defining what assets _should_ exist and
+verifying them against actual assets found using osQuery Management Server (MS).
 
-# Architecture Overview
+## Core Components
 
-Fleetfolio operates using a structured assurance model:
+- **EAA (Enterprise Asset Assurance)**: Responsible for defining, tracking, and
+  validating internal infrastructure assets.
+- **TEM (Threat Exposure Management)**: Extends assurance by identifying and
+  assessing external exposure risks and attack surfaces.
 
-1. **Expectation Definition** – Organizations define what assets, systems, and security controls should exist.
-2. **Discovery & Telemetry Collection** – Data is collected through osQuery MS and other integrated discovery mechanisms.
-3. **Comparison & Gap Analysis** – Expected assets are matched against discovered assets.
-4. **Exposure & Threat Analysis** – External-facing risks, misconfigurations, and vulnerabilities are assessed.
-5. **Reporting & Operational Intelligence** – Actionable insights are generated for engineering and security teams.
+Together, EAA and TEM provide a complete visibility-to-remediation lifecycle
+across infrastructure, applications, and digital assets.
 
-EAA focuses on internal infrastructure integrity and compliance validation, while TEM focuses on external threat surface exposure and risk detection.
+## Why Fleetfolio?
 
+Traditional security tools focus on reactive scanning. Fleetfolio is
+**assurance-driven**:
 
-# Core Components
+- **Define Intent**: Establish what your infrastructure state should be.
+- **Validate Alignment**: Continuously match expectations against multi-source
+  discovery.
+- **Identify Gaps**: Automatically detect unauthorized assets, shadow IT, and
+  misconfigurations.
+- **Actionable Intelligence**: Generate structured insights for engineering and
+  security teams.
 
-## EAA – Enterprise Asset Assurance
+## Resources
 
-EAA is responsible for defining, tracking, and validating infrastructure assets across environments.
+- **[Official Documentation](https://docs.opsfolio.com/)**
+- **[Fleetfolio Website](https://fleetfolio.dev/)**
+- **[Enterprise Asset Assurance (EAA)](https://docs.opsfolio.com/fleetfolio/eaa/introduction)**
+- **[Threat Exposure Management (TEM)](https://docs.opsfolio.com/fleetfolio/tem/introduction)**
 
-It enables organizations to:
+---
 
-- Maintain a source-of-truth asset inventory
-- Detect asset drift and configuration deviations
-- Identify unmanaged or rogue systems
-- Enforce compliance baselines
-- Track lifecycle state of assets
-- Monitor asset-level risk posture
-
-EAA ensures operational discipline by continuously verifying that infrastructure aligns with declared architecture.
-
-Learn more:
-- [Introduction](https://docs.opsfolio.com/fleetfolio/eaa/introduction)
-- [Installation](https://docs.opsfolio.com/fleetfolio/eaa/installation)
-- [Quick Start](https://docs.opsfolio.com/fleetfolio/eaa/quick-start)
-
-
-## TEM – Threat Exposure Management
-
-TEM extends assurance beyond internal visibility by identifying and assessing external exposure risks.
-
-TEM enables organizations to:
-
-- Discover exposed domains and services
-- Identify attack surface expansion
-- Detect misconfigurations
-- Analyze publicly accessible assets
-- Track vulnerability exposure
-- Prioritize remediation based on risk
-
-TEM converts external attack surface intelligence into structured, trackable assurance workflows.
-
-Learn more:
-- [Introduction](https://docs.opsfolio.com/fleetfolio/tem/introduction)
-- [Installation](https://docs.opsfolio.com/fleetfolio/tem/installation)
-- [Quick Start](https://docs.opsfolio.com/fleetfolio/tem/quick-start)
-
-
-# Why Fleetfolio?
-
-Traditional security tools focus on reactive scanning. Fleetfolio is assurance-driven.
-
-Instead of only detecting vulnerabilities, Fleetfolio:
-
-- Defines expected infrastructure state
-- Validates continuous alignment
-- Identifies exposure risks proactively
-- Provides operational intelligence
-- Enables security as an engineering discipline
-
-Fleetfolio is designed for organizations that require infrastructure integrity at scale.
-
-# Key Benefits
-
-- Continuous infrastructure validation
-- Reduction of shadow IT
-- Improved compliance posture
-- Faster threat detection
-- Structured exposure analysis
-- Operational transparency across teams
-- Alignment between DevOps, Security, and Compliance
-
-
-# Use Cases
-
-Fleetfolio is ideal for:
-
-- Enterprise Infrastructure Governance
-- Continuous Compliance Programs
-- Threat Exposure Monitoring
-- DevSecOps Integration
-- Asset Lifecycle Management
-- Security Operations Optimization
-
-
+&copy; 2026 [Opsfolio](https://opsfolio.com/). All rights reserved.
